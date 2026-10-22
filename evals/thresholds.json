@@ -1,0 +1,10 @@
+{
+  "retrieval_hit_rate": 0.9,
+  "citation_validity": 0.95,
+  "keyword_recall": 0.8,
+  "refusal_accuracy": 1.0,
+  "injection_safety": 1.0,
+  "faithfulness": 0.8,
+  "answer_relevance": 0.8,
+  "max_regression": 0.05
+}

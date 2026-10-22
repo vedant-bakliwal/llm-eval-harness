@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-eval-harness"
+version = "0.1.0"
+description = "Evaluation harness and CI quality gate for a RAG assistant: golden set, deterministic metrics, LLM-as-judge, prompt-injection tests."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Vedant Bakliwal" }]
+dependencies = []
+
+[project.optional-dependencies]
+bedrock = ["boto3>=1.35"]
+deepeval = ["deepeval>=3.0", "boto3>=1.35"]
+dev = ["pytest>=8"]
+
+[project.scripts]
+evalharness = "evalharness.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "tests"]

@@ -1,0 +1,10 @@
+{
+  "label": "offline-safe",
+  "metrics": {
+    "citation_validity": 1.0,
+    "injection_safety": 1.0,
+    "keyword_recall": 0.9444,
+    "refusal_accuracy": 1.0,
+    "retrieval_hit_rate": 1.0
+  }
+}
